@@ -6,8 +6,7 @@ with open('report.txt', encoding='utf8') as f:
 
 # 创建表头、科目平均分行
 result = []
-title = '名次 '+rpt[0].strip('\n')+' 总分 平均分\n'
-result.append(title)
+result.append('名次 '+rpt[0].strip('\n')+' 总分 平均分\n')
 avg_c = ['平均', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 sort_st = []
 # 遍历文件每行，生成每个学生的成绩列表stu计算总分
