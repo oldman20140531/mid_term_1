@@ -22,9 +22,9 @@ for s in rpt[1:]:
         if stu[i] < 60:
             stu[i] = '不及格'
     # 将学生成绩插入姓名和统计结果一并写入sort_st列表待排序
-    stu.insert(0, s.split()[0])
-    stu.append(sum_st)
     stu.append(int(sum_st/len(stu)))
+    stu.insert(0, s.split()[0])
+    stu.insert(-1, sum_st)
     sort_st.append(stu)
 # 计算各科目平均分写入result
 for x in range(1, len(avg_c[:-2])):
